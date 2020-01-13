@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+
 </head>
 <body> 
 <div class="container">
@@ -41,14 +42,14 @@
                 <div class="card-header display-5 text-center bg-primary">
                     Target Score
                     
-                </div><p class="card-text text-center"><span class="targetScore">0</span></p>
+                </div><p class="card-text text-center"><span id="targetScore">0</span></p>
             </div>
             
             <div class="col-sm-3 border">
                 <div class="card-header display-5 text-center bg-primary">
                     Your Score
                     
-                </div><p class="card-text text-center"><span class="yourScore">0</span></p>
+                </div><p class="card-text text-center"><span id="yourScore">0</span></p>
 
             </div>
 
@@ -56,11 +57,11 @@
                 <div class="card-header display-5 text-center bg-primary">
                     Crystal Options
                     
-                </div><p class="card-text text-center"><span class="crystalOptions">
-                <img id="gem-1" src="C:\Users\brook\Downloads\gemBlue.png">
-                <img id="gem-2" src="C:\Users\brook\Downloads\gemYellow.png">
-                <img id="gem-3" src="C:\Users\brook\Downloads\gemRed.png">
-                <img id="gem-4" src="C:\Users\brook\Downloads\gemPurple.png">
+                </div><p class="card-text text-center"><span id="crystalOptions">
+                <img id="gem-1" src="./assets/images/gemBlue.png">
+                <img id="gem-2" src="./assets/images/gemYellow.png">
+                <img id="gem-3" src="./assets/images/gemRed.png">
+                <img id="gem-4" src="./assets/images/gemPurple.png">
 
                 </span></p>
 
@@ -72,13 +73,13 @@
                     <div class="card-header display-5 text-center bg-primary">
                         Wins
                     </div>
-                    <p class="card-text text-center"><span class="wins">0</span></p>
+                    <p class="card-text text-center"><span id="wins">0</span></p>
                 </div>
                 <div class="col-sm-6 border">
                     <div class="card-header display-5 text-center bg-primary">
                         Loses
                     </div>
-                    <p class="card-text text-center"><span class="loses">0</span></p>
+                    <p class="card-text text-center"><span id="loses">0</span></p>
                 </div>
             </div>
     </div>
@@ -90,7 +91,8 @@
         
 
 
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
     
 </body>
 </html>
