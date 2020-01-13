@@ -6,17 +6,38 @@ var targetScore;
 var yourScore;
 var wins;
 var loses;
-getRandomInt();
-targetscore = getRandomInt();
 
-function getRandomInt(min, max) {
-    min = Math.ceil(19);
-    max = Math.floor(160);
-    return Math.floor(Math.random() * (160 - 19)) + min; //The maximum is exclusive and the minimum is inclusive
+function getRandomInt() {
+    return Math.floor(Math.random() * 111 + 19); //The maximum is exclusive and the minimum is inclusive
+  
   };
 
   
+  targetscore = getRandomInt();
+
+function gameSetup() {
+    $("#blue").attr("data-crystalvalue", Math.floor(Math.random() * 12));
+    $("#yellow").attr("data-crystalvalue", Math.floor(Math.random() * 12));
+    $("#red").attr("data-crystalvalue", Math.floor(Math.random() * 12));
+    $("#purple").attr("data-crystalvalue", Math.floor(Math.random() * 12));
+    getRandomInt();
+    $("#targetScore").html(targetscore)
+
+
+
+    
+  
+};
+gameSetup()
+
+$(".gem").on("click", gemClick())
+function gemClick() {
+  yourScore += this.crystalvalue
+}
+
+
 });
+
 
 
 // assign a target score to a variable using Math.random 
